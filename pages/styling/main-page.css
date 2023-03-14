@@ -1,0 +1,17 @@
+.header, .container, .main-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header, .container{
+    font-size: 40px;
+}
+
+.main-container{
+    border: 2px solid red;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(171,115,28,1) 0%, rgba(255,172,45,1) 52%, rgba(255,212,145,1) 100%);
+}
