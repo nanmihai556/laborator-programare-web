@@ -2,18 +2,38 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styling/login-signup.css">
+        <link rel="stylesheet" href="styling/general-css.css">
         <title>
             Sign Up Page
         </title>
     </head>
     <body>
         <h1 class="title">Sign up form</h1>
-        <div class="container">
+        <div class="container-login">
             <div class="sign-up-container">
                 <div class="sign-up-container-element">
+                    <label><b>Email: </b></label>
+                    <input id='email' placeholder="Enter email...">
+                    <span id="email-sign" style="display: inline-block;
+                                                width: 1em;
+                                                height: 1em;
+                                                margin-left: 0.5em;
+                                                font-size: 1.2em;
+                                                text-align: center; ">
+
+                    </span>
+                </div>
+                <div class="sign-up-container-element">
                     <label class="input-label"><b>Username: </b></label>
-                    <input placeholder="Enter username">
+                    <input id="username" placeholder="Enter username">
+                    <span id="username-sign" style="display: inline-block;
+                                                width: 1em;
+                                                height: 1em;
+                                                margin-left: 0.5em;
+                                                font-size: 1.2em;
+                                                text-align: center; ">
+
+                    </span>
                 </div>
                 <div class="sign-up-container-element">
                     <label class="input-label"><b>Password: </b></label>
@@ -34,6 +54,7 @@
         </div>  
         <footer>
             <b>Made by Nan Mihai</b>
-        </footer> 
+        </footer>
+        <script src="../scripts/signup.js"></script>
     </body>
 </html>

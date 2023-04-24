@@ -2,28 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styling/main-page.css">
+        <link rel="stylesheet" href="styling/general-css.css">
         <title>
             Main Page
         </title>
+
     </head>
     <body>
-        <header class="header">
+        <header class="header-main">
             SUPPLEMENTS SHOP  
         </header>
         <div class="main-image">
-            <p><a href="https://en.wikipedia.org/wiki/Dietary_supplement">
-                <img src="../assets/images/supplements.jpg" alt="mountain" width="1000" height="400" >
-            </a></p>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/Dietary_supplement">
+                    <img src="../assets/images/supplements.jpg" alt="mountain" width="1000" height="400" >
+                </a>
         </div>
         <main>
             <div class="main-container">
-                <p style="font-size: 20px"> Aici se pot efectua mai multe actiuni, precum: </p>
+                <p style="font-size: 20px"> Here you can do the following actions: </p>
                 <ul>
-                    <li style="font-size: 20px">Creare supliment</li>
-                    <li style="font-size: 20px">Actualizare supliment</li>
-                    <li style="font-size: 20px">Stergere supliment</li>
-                    <li style="font-size: 20px">Citire supliment</li>
+                    <li style="font-size: 20px">Create supplement</li>
+                    <li style="font-size: 20px">Update supplement</li>
+                    <li style="font-size: 20px">Delete supplement</li>
+                    <li style="font-size: 20px">Read supplement</li>
                 </ul>
                 <div class="functional-component">
                     <div class="buttons">
@@ -40,6 +42,17 @@
                         </div>
                         <div>
                             <button class="button">DELETE</button>
+
+                            <label for="search-select">Search:</label>
+                            <input type="text" id="search-select">
+
+                            <select id="my-select">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                                <option value="5">Option 5</option>
+                            </select>
                         </div>
                     </div>
                     <div class="table">
@@ -49,10 +62,38 @@
                         <button></button>
                     </div>
                 </div>
+                <div id="all-supplements">
+                    <p style="font-weight: bold; font-size: 20px">List of all supplements:</p>
+                    <ul id="myList">
+                        <li>Protein Powder</li>
+                        <li>Creatine Monohydrate</li>
+                        <li>Ashwaganda</li>
+                        <li>Vitamin D</li>
+                        <li>Vitamin C</li>
+                        <li>Vitamin E</li>
+                        <li>Vitamin K</li>
+                        <li>Omega 3</li>
+                        <li>Tongkat Ali</li>
+                    </ul>
+                    <div id="showMore" style="margin-left: 30px; cursor: pointer">View More...</div>
+                </div>
+                <img class="popup-image" src="../assets/images/supplements.jpg" alt="mountain" width="1000" height="400" >
+                <div id="popup" class="modal">
+                    <div class="modal-content">
+                        <img id="popup-img" src="">
+                        <span class="close">&times;</span>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
             <b>Made by Nan Mihai</b>
-        </footer>  
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../scripts/main-page.js"></script>
+        <script src="../scripts/jQuery-select.js"></script>
+        <script src="../scripts/image-script.js"></script>
+
     </body>
 </html>
